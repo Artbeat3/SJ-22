@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins';
+    background-color: rgb(163, 216, 240);
+    text-align: center;
+}
+
+
+.header{
+    background: radial-gradient(orange, gold);
+    background-size: cover;
+    margin-bottom: 25px;
+}
+
+
+.ending{
+    position: absolute;
+    right: 30px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 20px 0;
+    color: #ff523b;
+}
+
+
+
+/*----part 2-----*/
+
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    align-items: center;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 30;
+    padding-left: 30;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 80px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating{
+    color: red;
+}
+
+
+
+
+
+/*Footer*/
+.footer-parent{
+    background-color: rgb(82, 192, 243);
+    text-align: center;
+    color: black;
+    padding: 20px 0 50px 0;
+    margin-top: 80px;
+    
+    
+}
+
+.footer-parent h4{
+    margin: 20px 0 30px 0;
+}
+.footer-child{
+    text-align: left;
+    width: auto;
+    display: inline-block;
+}
+@media (max-width: 800px) {
+    .footer-child{
+        text-align: center;
+        width: auto;
+        display: inline-block;
+    }
+  }
+
+/*Test slides*/
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 30px;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: rgb(82, 192, 243);
+  }
+
+  .bracket{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .bracket-content{
+    color: #ff523b;
+  }
+  .bracket-img{
+    border-width: 3px;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 3px;
+    border-color: #ff523b;
+    width: 250px;
+    height: 250px;
+  }
+
+  .bracket-img img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  nav{
+    margin-right: 10px;
+  }
+
+  a{
+    text-decoration: none;
+  }
