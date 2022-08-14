@@ -1,31 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-
-body{
+      body{
     font-family: 'Poppins';
-    background-color: rgb(163, 216, 240);
+    background-color: #bde3f4;
     text-align: center;
+ 
+}
+.open-sans{
+  font-family: 'Open Sans', sans-serif;
+}
+.garamond{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+}
+.oxygen{
+    font-family: 'Oxygen', sans-serif;
 }
 
-
-.header{
-    background: radial-gradient(orange, gold);
-    background-size: cover;
-    margin-bottom: 25px;
+        .hero{
+            background: radial-gradient(orange, gold);
+            background-size: cover;
+            margin-bottom: 25px;
+        }
+        .hero-mid{
+            background: radial-gradient(orange, gold);
+            background-size: cover;
+            margin-top: 25px;
+            border-radius: 25px;
+            position: relative;
+            width: 75%;
+            left: 50%;
+            transform:translateX(-50%);
+            height: auto;
+            
+        }
+        .top-slides{
+          background: orange;
+          animation: mymove 5s infinite;
+          text-align: center;
+          height: 100%;
+}
+.top-slides p{
+  margin-bottom: 0rem;
 }
 
-
-.ending{
-    position: absolute;
-    right: 30px;
+@keyframes mymove {
+  from {background-color: orange;}
+  to {background-color: white;}
 }
-
-.container{
+        
+        .container{
     max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container-mid{
+    max-width: 900px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -48,47 +79,98 @@ body{
 }
 
 .col-2 h1{
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 70px;
+    line-height: 70px;
     margin: 20px 0;
     color: #ff523b;
+
 }
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 30px;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu .bracket-img:hover {
+    background-color: rgb(82, 192, 243);
+  }
 
+  .bracket{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .bracket-content{
+    color: #ff523b;
+  }
+  .bracket-img{
+    border-radius: 20px;
+    padding: 3px;
+    width: 250px;
+    height: 250px;
+    background-color: #ffe0b3;
+  }
+  @media(max-width: 500px){
+    .bracket-img{
+    border-radius: 20px;
+    padding: 3px;
+    width: 150px;
+    height: 150px;
+    background-color: #ffe0b3;
+  }
+  }
 
-
-/*----part 2-----*/
-
-.categories{
-    margin: 70px 0;
-}
-.col-3{
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-.col-3 img{
+  .bracket-img img{
     width: 100%;
-}
-.small-container{
-    max-width: 1080px;
+    height: 100%;
+  }
+
+  /*product*/
+  .add-btn{
+            margin: 5px 40px 5px 0;
+        }
+        .add-btnn{
+            margin: 5px 0 5px 0;
+            background-color: skyblue;
+            border: 1px solid orange;
+            border-radius: 10px;
+        }
+        .add-btnn:hover{
+            background-color: blue;
+        }
+        .card-img{
+            width: 100%;
+        }
+        .card-details{
+            text-align: center;
+        }
+        .card-card{
+            width: 17rem;
+            padding: 20px;
+        }
+        @media(max-width: 500px){
+            .card-card{
+                width: 9.1rem;
+                padding: 20px;
+        }
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .small-container{
+    max-width: 1180px;
     margin: auto;
     align-items: center;
 }
 
-.col-4{
-    flex-basis: 25%;
-    padding-top: 30px;
-    padding-right: 0;
-    padding-bottom: 30;
-    padding-left: 30;
-    min-width: 200px;
-    margin-bottom: 50px;
-}
-
-
-.col-4 img{
-    width: 100%;
-}
 
 .title{
     text-align: center;
@@ -110,19 +192,23 @@ body{
     transform: translateX(-50%);
 }
 
-h4{
-    color: #555;
-    font-weight: normal;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
 }
-.col-4 p{
-    font-size: 14px;
+@media(max-width:500px){
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
 }
-.rating{
-    color: red;
 }
 
-
-
+.see-more{
+  text-align: center;
+}
 
 
 /*Footer*/
@@ -150,56 +236,4 @@ h4{
         width: auto;
         display: inline-block;
     }
-  }
-
-/*Test slides*/
-
-div.scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-    padding: 30px;
-  }
-  
-  div.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-  }
-  
-  div.scrollmenu a:hover {
-    background-color: rgb(82, 192, 243);
-  }
-
-  .bracket{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .bracket-content{
-    color: #ff523b;
-  }
-  .bracket-img{
-    border-width: 3px;
-    border-radius: 20px;
-    border-style: solid;
-    padding: 3px;
-    border-color: #ff523b;
-    width: 250px;
-    height: 250px;
-  }
-
-  .bracket-img img{
-    width: 100%;
-    height: 100%;
-  }
-
-
-  nav{
-    margin-right: 10px;
-  }
-
-  a{
-    text-decoration: none;
   }
