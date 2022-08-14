@@ -1,3 +1,4 @@
+html, body {width: auto!important; overflow-x: hidden!important}
 body {
     font-family: 'Poppins';
     background-color: #bde3f4;
@@ -180,8 +181,9 @@ div.scrollmenu .bracket-img:hover {
 
 @media(max-width: 500px) {
     .card-card {
-        width: 9.5rem;
-        padding: 20px;
+        width: 10rem;
+        padding: 20px 0 20px 20px;
+        
     }
 }
 
@@ -193,6 +195,7 @@ div.scrollmenu .bracket-img:hover {
     max-width: 1180px;
     margin: auto;
     align-items: center;
+    
 }
 
 
@@ -228,6 +231,9 @@ div.scrollmenu .bracket-img:hover {
         display: grid;
         grid-template-columns: auto auto;
         text-align: center;
+        position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     }
 }
 
