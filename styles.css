@@ -180,7 +180,7 @@ div.scrollmenu .bracket-img:hover {
 
 @media(max-width: 500px) {
     .card-card {
-        width: 9.1rem;
+        width: 9.5rem;
         padding: 20px;
     }
 }
@@ -195,13 +195,6 @@ div.scrollmenu .bracket-img:hover {
     align-items: center;
 }
 
-@media(max-width: 500px){
-    .small-container {
-        max-width: 850px;
-        margin: auto;
-        align-items: center;
-    }
-}
 
 .title {
     text-align: center;
@@ -233,7 +226,7 @@ div.scrollmenu .bracket-img:hover {
 @media(max-width:500px) {
     .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         text-align: center;
     }
 }
